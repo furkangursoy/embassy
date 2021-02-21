@@ -28,8 +28,8 @@ pip install embassy
 from embassy import align_and_measure
 import numpy as np
 
-X = np.array([[1.8,  2.0], [2.3,  2.5], [ 1.8, 4.2],  [4.1, 3.1]])
-Y = np.array([[0.0, -1.2], [0.3,  1.6], [-0.4, 3.5 ], [1.6, 2.5]])
+X = np.array([[1.8, 2.0], [2.3,  2.5], [ 1.8, 4.2],  [4.1, 3.1]])
+Y = np.array([[0.0, 1.2], [0.3,  1.6], [-0.4, 3.5 ], [1.6, 2.5]])
 
 output = align_and_measure(X, Y)
              
