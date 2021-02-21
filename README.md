@@ -25,19 +25,18 @@ pip install embassy
 ## Example Usage
 
 ```python
-
 from embassy import align_and_measure
 import numpy as np
 
-X = np.array([[ 1.8,  2.0], [2.3,   2.5], [1.8,   4.2], [ 4.1, 3.1]])
-Y = np.array([[-0.0, -4.2], [-0.6, -2.6], [ 0.8, -0.7], [-2.6, 0.5]])
+X = np.array([[1.8,  2.0], [2.3,  2.5], [ 1.8, 4.2],  [4.1, 3.1]])
+Y = np.array([[0.0, -1.2], [0.3,  1.6], [-0.4, 3.5 ], [1.6, 2.5]])
 
 output = align_and_measure(X, Y)
              
-print("\n Translation Error:", output['translation_error'], 
-      "\n Rotation Error:",    output['rotation_error'],    
-      "\n Scale Error:",       output['scale_error'],       
-      "\n Stability Error:",   output['stability_error'],
+print("\n Translation Error :", output['translation_error'], 
+      "\n Rotation Error    :",    output['rotation_error'],    
+      "\n Scale Error       :",       output['scale_error'],       
+      "\n Stability Error   :",   output['stability_error'],
       "\n",
       "\n X_aligned:\n",       output['emb1'],
       "\n",
