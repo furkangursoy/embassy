@@ -34,13 +34,13 @@ Y = np.array([[0.0, 1.2], [0.3,  1.6], [-0.4, 3.5 ], [1.6, 2.5]])
 output = align_and_measure(X, Y)
              
 print("\n Translation Error :", output['translation_error'], 
-      "\n Rotation Error    :",    output['rotation_error'],    
-      "\n Scale Error       :",       output['scale_error'],       
-      "\n Stability Error   :",   output['stability_error'],
+      "\n Rotation Error    :", output['rotation_error'],    
+      "\n Scale Error       :", output['scale_error'],       
+      "\n Stability Error   :", output['stability_error'],
       "\n",
-      "\n X_aligned:\n",       output['emb1'],
+      "\n X_aligned:\n",        output['emb1'],
       "\n",
-      "\n Y_aligned:\n",       output['emb2'])
+      "\n Y_aligned:\n",        output['emb2'])
 ```
 
 See _Examples/Demonstration.ipynb_ for visual and real-world examples.
