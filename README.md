@@ -6,6 +6,8 @@ This Python package provides tools
 * to measure alignment and stability errors of given embeddings,
 * to align given embeddings.
 
+The package will soon be updated with new functionality for extracting rotation angles of a rotation matrix, creating rotation matrices with a desired magnitude, adding random walk-based noise with a desired magnitude, and other operations.
+
 ## Dependecies
 
 1. [numpy](https://numpy.org/)
